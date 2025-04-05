@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petfood.com - Beyond the Bowl: Your Complete Pet Parenting Partner</title>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <!-- Favicon Placeholder -->
+    <link rel="icon" href="images/favicon.png" type="image/png"> <!-- Assuming PNG format for refined logo -->
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts (Example: Nunito & Open Sans) -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Spinner -->
+    <div class="loading-spinner">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- ==== Header ==== -->
+    <header class="site-header fade-in">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">
+                    <img src="logooption.png" alt="Petfood.com Logo" class="logo-image"> <!-- Placeholder for FINAL logo file -->
+                    <!-- Visually hidden text for accessibility if logo text isn't clear -->
+                    <!-- <span class="visually-hidden">Petfood.com: Beyond the Bowl</span> -->
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#quiz-section">Pet Readiness</a></li>
+                <!-- <li><a href="#">Blog</a></li> Later Addition? -->
+            </ul>
+            <div class="nav-actions">
+                <a href="#login" class="btn btn-secondary">Log In</a> <!-- Assuming login section/modal ID -->
+                <a href="#signup" class="btn btn-primary animate-pulse">Get Started Free</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation menu"><i class="fas fa-bars"></i></button>
+        </nav>
+    </header>
+
+    <!-- ==== Hero Section ==== -->
+    <section class="hero fade-in">
+        <div class="hero-content">
+            <h1 class="hero-headline">Your Pet's Best Life Starts Here.</h1>
+            <p class="hero-subtitle">Ready for a pet? Already have one? We guide you through every wag, purr, and milestone. Petfood.com goes <strong class="highlight">Beyond the Bowl</strong> to offer everything you need for a happy, healthy journey together.</p>
+            <div class="cta-buttons">
+                <a href="#quiz-section" class="btn btn-primary btn-large hero-cta"> <i class="fas fa-question-circle"></i> Discover Your Pet Readiness</a>
+                <a href="#features" class="btn btn-secondary btn-large">Explore All Features</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <!-- CONFIRMED HERO IMAGE -->
+            <img src="hero-puppy.png" alt="Adorable Golden Retriever puppy looking directly at the camera with soulful eyes.">
+            <!-- JS Idea: Subtle parallax effect on scroll -->
+        </div>
+    </section>
+
+    <!-- ==== How It Works / Journey ==== -->
+    <section class="how-it-works fade-in" id="journey">
+        <h2 class="section-title">Your Pet Parenting Journey, Simplified</h2>
+        <div class="steps-container">
+            <!-- Step 1 -->
+            <div class="step">
+                <div class="step-icon"><i class="fas fa-lightbulb"></i></div>
+                <h3 class="step-title">Discover Your Perfect Match</h3>
+                <p class="step-description">Feeling unsure? Our Readiness Quiz reveals your lifestyle fit and connects you with ideal breeds or species, guiding you towards responsible adoption.</p>
+            </div>
+            <!-- Step 2 -->
+            <div class="step">
+                 <div class="step-icon"><i class="fas fa-heartbeat"></i></div>
+                <h3 class="step-title">Nurture Their Wellbeing</h3>
+                <p class="step-description">Effortlessly track health, diet, and activities with our fun, gamified system. Follow personalized Care Plans to keep your companion thriving.</p>
+            </div>
+            <!-- Step 3 -->
+            <div class="step">
+                 <div class="step-icon"><i class="fas fa-users"></i></div>
+                <h3 class="step-title">Connect with Community</h3>
+                <p class="step-description">Share joyful moments, swap tips, find local playdates, and get support from fellow pet lovers in our vibrant social network.</p>
+            </div>
+            <!-- Step 4 -->
+             <div class="step">
+                 <div class="step-icon"><i class="fas fa-shield-alt"></i></div>
+                <h3 class="step-title">Thrive with Smart Tools</h3>
+                <p class="step-description">Budget smarter, find pet-friendly places instantly, and get peace of mind with lost pet alerts – simplify your life and enrich theirs.</p>
+            </div>
+        </div>
+         <!-- JS Idea: Icons subtly animate on hover or when scrolled into view -->
+    </section>
+
+
+    <!-- ==== Features Deep Dive ==== -->
+    <section class="features" id="features">
+        <h2 class="section-title">Unlock a World of Tail-Wagging Features</h2>
+
+        <!-- Feature 1: Readiness & Matchmaking -->
+        <div class="feature-item">
+            <div class="feature-image">
+                 <img src="feature-quiz-mockup.png" alt="Mockup showing the Pet Readiness Quiz interface leading to pet match suggestions."> <!-- Placeholder Image -->
+            </div>
+            <div class="feature-text">
+                <div class="feature-icon"><i class="fas fa-clipboard-check" style="color: var(--primary-blue);"></i></div>
+                <h3 class="feature-title">Not Just Ready? <em class="highlight">Perfectly</em> Ready.</h3>
+                <p class="feature-description">Go beyond guesswork. Our unique Readiness Quiz analyzes your life—finances, time, space—for honest advice. Then, discover vetted adoptable pets (from shelters & breeders!) that truly fit *you*.</p>
+                <a href="#quiz-section" class="learn-more">Take the Readiness Quiz <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- Feature 2: Gamified Care Plans -->
+        <div class="feature-item reverse">
+             <div class="feature-text">
+                 <div class="feature-icon"><i class="fas fa-trophy" style="color: var(--accent-green);"></i></div>
+                <h3 class="feature-title">Make Wellness Fun, Not a Chore</h3>
+                <p class="feature-description">Turn daily care into a game! Log walks, meals, vet visits, and grooming to earn points and climb leaderboards. Custom, breed-specific Care Plans ensure you never miss a beat.</p>
+                 <a href="#signup" class="learn-more">See Gamification in Action <i class="fas fa-arrow-right"></i></a>
+            </div>
+             <div class="feature-image">
+                <img src="gamification-mockup.png" alt="Mockup of a playful dashboard showing pet activity tracking and points earned."> <!-- Placeholder Image -->
+                <!-- JS Idea: Animate points counter briefly? -->
+            </div>
+        </div>
+
+        <!-- Feature 3: Community & Safety -->
+        <div class="feature-item">
+             <div class="feature-image">
+                <img src="socialfeed.png" alt="Split image showing a social feed preview and a map indicating a lost pet alert."> <!-- Placeholder Image -->
+            </div>
+            <div class="feature-text">
+                 <div class="feature-icon"><i class="fas fa-map-marker-alt" style="color: var(--secondary-orange);"></i></div>
+                <h3 class="feature-title">Your Pack Online & Protected Offline</h3>
+                <p class="feature-description">Share adorable photos, celebrate milestones, and arrange local meetups in our supportive Pet Social Network. Plus, gain priceless peace of mind with rapid Lost Pet Recovery alerts powered by geolocation.</p>
+                 <a href="#community" class="learn-more">Join the Petfood.com Pack <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+         <!-- Feature 4: Smart Tools -->
+        <div class="feature-item reverse">
+             <div class="feature-text">
+                 <div class="feature-icon"><i class="fas fa-tools" style="color: var(--primary-blue);"></i></div>
+                <h3 class="feature-title">Simplify Everything Else</h3>
+                <p class="feature-description">Manage pet-related costs effortlessly with built-in Expense Tracking. Instantly find nearby dog parks, vets, groomers, and pet-friendly spots with our Places Locator. More time for cuddles, less time searching!</p>
+                 <a href="#signup" class="learn-more">Explore All Smart Tools <i class="fas fa-arrow-right"></i></a>
+            </div>
+             <div class="feature-image">
+                <img src="expenses.png" alt="Mockup showing an expense tracker interface and a map with pet-friendly locations."> <!-- Placeholder Image -->
+            </div>
+        </div>
+         <!-- JS Idea: Subtle scroll-triggered animations (fade/slide) for each feature block -->
+    </section>
+
+<!-- ==== Readiness Quiz Section ==== -->
+<section class="quiz-section-wrapper" id="quiz-section"> <!-- Renamed section ID slightly -->
+    <div class="quiz-callout" id="quiz-intro"> <!-- Original callout now serves as intro -->
+         <div class="quiz-content">
+            <h2 class="quiz-headline">Are You Truly Ready for Paws & Play?</h2>
+            <p class="quiz-description">Finding the right pet starts with understanding yourself. Our quick, insightful quiz gives personalized feedback on your readiness and suggests companions that match your unique life.</p>
+            <!-- THIS BUTTON WILL START THE QUIZ -->
+            <button id="start-quiz-btn" class="btn btn-primary btn-large quiz-cta"><i class="fas fa-paw"></i> Start Your Readiness Quiz!</button>
+         </div>
+         <div class="quiz-image">
+             <img src="ready.png" alt="Friendly illustration of a person thoughtfully considering different types of pets.">
+         </div>
+    </div>
+
+    <!-- == QUIZ INTERFACE (Initially Hidden) == -->
+    <div id="quiz-container" class="quiz-container" style="display: none;">
+        <div id="quiz-progress-bar-container">
+            <div id="quiz-progress-bar"></div>
+            <span id="quiz-progress-text">Question 1 / 20</span>
+        </div>
+
+        <div id="quiz-question-area">
+            <h3 id="question-text">Question text goes here...</h3>
+            <div id="answer-options" class="answer-options">
+                <!-- Answer options will be dynamically generated here -->
+            </div>
+        </div>
+
+        <div id="quiz-validation" class="quiz-validation-message" style="display: none;">
+            Please select an answer before proceeding.
+        </div>
+
+        <div id="quiz-navigation" class="quiz-navigation">
+            <button id="prev-btn" class="btn btn-secondary">Previous</button>
+            <button id="next-btn" class="btn btn-primary">Next</button>
+            <button id="submit-btn" class="btn btn-primary" style="display: none;">Show Results</button>
+        </div>
+    </div>
+
+    <!-- == QUIZ RESULTS (Initially Hidden) == -->
+    <div id="quiz-results" class="quiz-results" style="display: none;">
+        <h2 class="section-title">Your Pet Readiness Results!</h2>
+        <div id="results-content">
+            <p>Your Score:</p>
+            <div id="results-score-display" class="results-score">--%</div>
+            <h3 id="results-level-text" class="results-level">Level Text...</h3>
+            <p id="results-summary-text" class="results-summary">Summary text based on level...</p>
+            <!-- Detailed advice/recommendations could go here later -->
+            <div class="results-actions">
+                 <button id="retake-quiz-btn" class="btn btn-secondary">Retake Quiz</button>
+                 <!-- Add buttons for email results, explore resources etc. later -->
+            </div>
+        </div>
+    </div>
+</section> <!-- END quiz-section-wrapper -->
+
+        <!-- Community Feed Snippet -->
+        <div class="community-feed-preview">
+            <h4 class="feed-preview-title">Peek Inside the Community Feed:</h4>
+            <div class="feed-item"> <img src="cat.jpg" alt="Cute cat sleeping in sunbeam"> Look at Whiskers soaking up the sun! 😻 #catlife #sleepycat</div>
+            <div class="feed-item"> <img src="Dog.jpg" alt="Golden Retriever puppy with leash"> First walk success! Any tips for loose-leash walking a VERY excited pup? 🙏 #puppytraining #dogtips</div>
+            <!-- Add more diverse examples -->
+       </div>
+
+    <!-- ==== Pet Gallery Section ==== -->
+    <section class="pet-gallery" id="gallery">
+        <h2 class="section-title">Pet Gallery</h2>
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="dogs">Dogs</button>
+            <button class="filter-btn" data-filter="cats">Cats</button>
+            <button class="filter-btn" data-filter="others">Others</button>
+        </div>
+        
+        <div class="gallery-grid" id="gallery-container">
+            <!-- Gallery items will be added here dynamically -->
+            <div class="gallery-item" data-category="dogs">
+                <img src="dog.jpg" alt="Happy Dog">
+                <div class="gallery-overlay">
+                    <h4>Max</h4>
+                    <p>Golden Retriever</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="cats">
+                <img src="cat.jpg" alt="Sleepy Cat">
+                <div class="gallery-overlay">
+                    <h4>Luna</h4>
+                    <p>Persian Cat</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="cats">
+                <img src="cat1.jpg" alt="Elegant Cat">
+                <div class="gallery-overlay">
+                    <h4>Milo</h4>
+                    <p>Siamese Cat</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="cats">
+                <img src="cats2.jpg" alt="Playful Cats">
+                <div class="gallery-overlay">
+                    <h4>Oliver</h4>
+                    <p>Domestic Shorthair</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="others">
+                <img src="bunny1.jpg" alt="Cute Bunny">
+                <div class="gallery-overlay">
+                    <h4>Thumper</h4>
+                    <p>Holland Lop Rabbit</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="dogs">
+                <img src="dog3.jpg" alt="Playful Puppy">
+                <div class="gallery-overlay">
+                    <h4>Rocky</h4>
+                    <p>German Shepherd</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="dogs">
+                <img src="dog4.jpg" alt="Happy Dog">
+                <div class="gallery-overlay">
+                    <h4>Bailey</h4>
+                    <p>Beagle</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="dogs">
+                <img src="pexels-steshkawillems-1390361.jpg" alt="Thinker Dog">
+                <div class="gallery-overlay">
+                    <h4>Rudy</h4>
+                    <p>Mixed Breed</p>
+                </div>                
+            </div>
+            <div class="gallery-item" data-category="dogs">
+                <img src="twodogs.jpg" alt="Techie Dogs">
+                <div class="gallery-overlay">
+                    <h4>Bill & Ted</h4>
+                    <p>Labradors</p>
+                </div>                
+            </div>
+            <div class="gallery-item" data-category="dogs">
+                <img src="dog5.jpg" alt="Couch Dog">
+                <div class="gallery-overlay">
+                    <h4>Winston</h4>
+                    <p>English Bulldog</p>
+                </div>                
+            </div>
+            <div class="gallery-item" data-category="dogs">
+                <img src="hero-puppy.png" alt="Adorable Puppy">
+                <div class="gallery-overlay">
+                    <h4>Bella</h4>
+                    <p>Golden Retriever Puppy</p>
+                </div>                
+            </div>
+            <div class="gallery-item" data-category="dogs">
+                <img src="collie.jpg" alt="Waving Collie">
+                <div class="gallery-overlay">
+                    <h4>Scout</h4>
+                    <p>Border Collie</p>
+                </div>                
+            </div>
+        </div>
+    </section>
+
+    <!-- ==== Community Section ==== -->
+    <section class="community" id="community">
+        <h2 class="section-title">Join Our Pack: Real Stories, Real Support</h2>
+        <p class="section-subtitle">See what fellow pet parents are saying and sharing on Petfood.com!</p>
+        <div class="testimonial-carousel"> <!-- Main Swiper container -->
+            <div class="swiper-wrapper"> <!-- REQUIRED wrapper -->
+    
+                <!-- Each testimonial MUST be inside its own swiper-slide -->
+                <div class="swiper-slide">
+                    <div class="testimonial">
+                        <img src="david.png" alt="Photo of David R." class="testimonial-img"> <!-- Placeholder -->
+                        <blockquote>"The Readiness Quiz was spot-on! ..."</blockquote>
+                        <cite>- David R. & 'Kai'</cite>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide">
+                     <div class="testimonial">
+                        <img src="472744721_10120212794779050_8682753397411463773_n.png" alt="Photo of Mike M." class="testimonial-img"> <!-- Placeholder -->
+                        <blockquote>"Tracking Max's walks and hitting our weekly goals..."</blockquote>
+                        <cite>- Mike M. & 'Max'</cite>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide">
+                    <div class="testimonial">
+                       <img src="trump.png" alt="Photo of Donald T." class="testimonial-img"> <!-- Placeholder -->
+                       <blockquote>"As a first-time Corgi owner, the breed-specific care plan..."</blockquote>
+                       <cite>- Donald T. & 'Jordy'</cite>
+                    </div>
+                </div>
+                <!-- Add more testimonials inside their own swiper-slide divs if needed -->
+    
+            </div> <!-- END swiper-wrapper -->
+    
+    
+            <!-- Add these DIVs if you want navigation arrows -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+    
+        </div> <!-- END testimonial-carousel -->
+
+    </section>
+
+    <!-- ==== Pet Costs Section ==== -->
+    <section class="pet-costs" id="costs">
+        <h2 class="section-title">Understanding Pet Ownership Costs</h2>
+        <p class="section-subtitle">Make informed decisions about pet ownership with our comprehensive cost breakdown</p>
+
+        <!-- Cost Calculator Toggle -->
+        <div class="calculator-toggle">
+            <button class="cost-toggle active" data-pet="dog">Dogs</button>
+            <button class="cost-toggle" data-pet="cat">Cats</button>
+            <button class="cost-toggle" data-pet="small-pet">Small Pets</button>
+        </div>
+
+        <!-- Cost Categories -->
+        <div class="costs-container">
+            <!-- Initial Costs Card -->
+            <div class="cost-card">
+                <div class="cost-header">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h3>One-Time Initial Costs</h3>
+                </div>
+                <div class="cost-details" id="initial-costs">
+                    <div class="cost-item">
+                        <span>Adoption/Purchase</span>
+                        <span class="price">$50 - $500+</span>
+                    </div>
+                    <div class="cost-item">
+                        <span>Initial Medical Exam</span>
+                        <span class="price">$70 - $130</span>
+                    </div>
+                    <div class="cost-item">
+                        <span>Spaying/Neutering</span>
+                        <span class="price">$200 - $800</span>
+                    </div>
+                    <div class="cost-item">
+                        <span>Initial Vaccinations</span>
+                        <span class="price">$75 - $100</span>
+                    </div>
+                    <div class="cost-item">
+                        <span>Supplies (Bed, Crate, etc.)</span>
+                        <span class="price">$200 - $500</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Monthly Costs Card -->
+            <div class="cost-card">
+                <div class="cost-header">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Monthly Regular Expenses</h3>
+                </div>
+                <div class="cost-details" id="monthly-costs">
+                    <div class="cost-item">
+                        <span>Food</span>
+                        <span class="price">$40 - $60</span>
+                    </div>
+                    <div class="cost-item">
+                        <span>Treats & Chews</span>
+                        <span class="price">$10 - $50</span>
+                    </div>
+                    <div class="cost-item">
+                        <span>Litter/Waste Bags</span>
+                        <span class="price">$10 - $25</span>
+                    </div>
+                    <div class="cost-item">
+                        <span>Toys & Enrichment</span>
+                        <span class="price">$10 - $30</span>
+                    </div>
+                    <div class="cost-item">
+                        <span>Pet Insurance</span>
+                        <span class="price">$20 - $60</span>
+                    </div>
+                    <div class="cost-item total">
+                        <span>Average Monthly Total</span>
+                        <span class="price">$90 - $225</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Annual Costs Card -->
+            <div class="cost-card">
+                <div class="cost-header">
+                    <i class="fas fa-stethoscope"></i>
+                    <h3>Annual Medical & Extra Costs</h3>
+                </div>
+                <div class="cost-details" id="annual-costs">
+                    <div class="cost-item">
+                        <span>Regular Vet Checkups</span>
+                        <span class="price">$200 - $400</span>
+                    </div>
+                    <div class="cost-item">
+                        <span>Vaccinations</span>
+                        <span class="price">$100 - $200</span>
+                    </div>
+                    <div class="cost-item">
+                        <span>Dental Care</span>
+                        <span class="price">$200 - $400</span>
+                    </div>
+                    <div class="cost-item">
+                        <span>Grooming</span>
+                        <span class="price">$30 - $90</span>
+                    </div>
+                    <div class="cost-item">
+                        <span>Emergency Fund</span>
+                        <span class="price">$400 - $1000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cost Saving Tips -->
+        <div class="cost-tips">
+            <h3>💡 Money-Saving Tips</h3>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <i class="fas fa-piggy-bank"></i>
+                    <h4>Pet Insurance</h4>
+                    <p>Consider pet insurance early to save on unexpected medical costs.</p>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-tags"></i>
+                    <h4>Bulk Buying</h4>
+                    <p>Buy food and supplies in bulk when on sale to reduce costs.</p>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-heart"></i>
+                    <h4>Preventive Care</h4>
+                    <p>Regular checkups prevent costly health issues later.</p>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <h4>Adopt Don't Shop</h4>
+                    <p>Adoption often includes initial vaccinations and medical care.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cost Calculator -->
+        <div class="cost-calculator">
+            <h3>Personalized Cost Calculator</h3>
+            <p>Estimate your monthly pet expenses based on your specific needs</p>
+            <form id="cost-calculator-form">
+                <div class="calculator-grid">
+                    <div class="calc-input">
+                        <label for="pet-type">Pet Type</label>
+                        <select id="pet-type" required>
+                            <option value="dog">Dog</option>
+                            <option value="cat">Cat</option>
+                            <option value="small-pet">Small Pet</option>
+                        </select>
+                    </div>
+                    <div class="calc-input">
+                        <label for="food-quality">Food Quality</label>
+                        <select id="food-quality">
+                            <option value="basic">Basic</option>
+                            <option value="premium">Premium</option>
+                            <option value="super-premium">Super Premium</option>
+                        </select>
+                    </div>
+                    <div class="calc-input">
+                        <label for="grooming">Grooming Needs</label>
+                        <select id="grooming">
+                            <option value="minimal">Minimal</option>
+                            <option value="moderate">Moderate</option>
+                            <option value="high">High</option>
+                        </select>
+                    </div>
+                    <div class="calc-input">
+                        <label for="insurance">Pet Insurance</label>
+                        <select id="insurance">
+                            <option value="none">None</option>
+                            <option value="basic">Basic Coverage</option>
+                            <option value="comprehensive">Comprehensive</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Calculate Costs</button>
+            </form>
+            <div id="calculator-result" class="calculator-result">
+                <h4>Estimated Monthly Costs:</h4>
+                <p class="estimated-cost">$0</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==== Final Call to Action (Sign Up) ==== -->
+    <section class="final-cta" id="signup">
+        <h2 class="cta-headline">Ready to Go <span class="highlight">Beyond the Bowl?</span></h2>
+        <p class="cta-description">Join Petfood.com for free today and unlock comprehensive guidance, joyful tracking, a supportive community, and smart tools designed for modern pet parenting. Give them the world they deserve.</p>
+        <a href="#signup-form" class="btn btn-primary btn-large final-cta-button"><i class="fas fa-rocket"></i> Elevate Your Pet Journey - Sign Up Free!</a>
+        <p class="cta-subtext">Basic plan is always free. Upgrade options available.</p> <!-- Optional: Clarify pricing model -->
+    </section>
+
+    <!-- ==== Footer ==== -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-logo-area">
+                 <img src="logooption.png" alt="Petfood.com Logo (White)" class="footer-logo"> <!-- Placeholder for WHITE version of logo -->
+                 <p class="footer-tagline">Beyond the Bowl.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigate</h4>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#quiz-section">Pet Readiness</a></li>
+                    <li><a href="#community">Community</a></li>
+                </ul>
+            </div>
+             <div class="footer-legal">
+                 <h4>Company</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Careers</a></li> <!-- Example -->
+                </ul>
+             </div>
+             <div class="footer-social">
+                 <h4>Connect</h4>
+                 <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                 <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                 <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                 <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a> <!-- Example -->
+             </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© <span id="current-year"></span> Petfood.com. All Rights Reserved. Built with <i class="fas fa-heart" style="color: var(--secondary-orange);"></i> for pet lovers.</p>
+             <!-- JS: Dynamically update year -->
+        </div>
+    </footer>
+
+    <!-- JS File Link -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <!-- Potential Carousel Library JS (Example: Swiper) -->
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <!-- <script> /* Initialize Swiper here */ </script> -->
+</body>
+</html>
